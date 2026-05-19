@@ -2,27 +2,29 @@
 
 An interactive cyber security education platform inspired by a digital science museum.
 
-![CyberLens Preview](images/cyberlens-preview.png)
-
 ---
 
 ## Overview
 
-CyberLens is an interactive cyber security education project designed to help beginners understand core cyber concepts in a more visual, approachable, and engaging way. Inspired by the idea of a digital science museum, the platform focuses on simplifying topics such as encryption, hashing, phishing, passwords, and online safety through interactive experiences instead of dense technical explanations.
+CyberLens is an interactive cyber security education project designed to help beginners understand core cyber concepts in a more visual, approachable, and engaging way. Inspired by the idea of a digital science museum, the platform focuses on simplifying topics such as encryption, hashing, phishing, passwords, public WiFi, digital footprints, and social engineering through interactive experiences instead of dense technical explanations.
 
-The project was created to make cyber security feel less intimidating and more accessible to everyday users, including people with little or no technical background. Rather than functioning like a traditional course, CyberLens encourages users to explore concepts at their own pace through visuals, animations, and simple real-world examples.
+The project was created to make cyber security feel less intimidating and more accessible to everyday users, including people with little or no technical background. Rather than functioning like a traditional course, CyberLens encourages users to explore concepts at their own pace through visuals, simple interactions, and real-world examples.
+
+It is built as a **static website** (HTML, CSS, and JavaScript) and is designed to run on [GitHub Pages](https://pages.github.com/) without a build step or backend.
 
 ---
 
 ## Features
 
-- Interactive hashing and encryption demonstrations
-- Beginner-friendly cyber security explainers
-- Educational phishing awareness activities
-- Visual learning experiences inspired by museum exhibits
-- Modern and accessible UI design
-- Interactive animations and visual learning components
-- Responsive layouts for different screen sizes
+- **Password Playground** — explore length, patterns, and strength visually
+- **Hashing Sandbox** — see how a tiny text change transforms a digital fingerprint
+- **Encryption Visualiser** — a gentle lock-and-key style letter-shift demo
+- **Phishing Spotter** — tap clues in a suspicious message and compare safer patterns
+- **Public WiFi Simulator** — compare open and protected traffic on a café network
+- **Digital Footprint Explorer** — layer everyday data signals into a simple profile
+- **Social Engineering Scenarios** — practise safer responses to common manipulation tactics
+- **Deeper exhibit pages** — optional “go deeper” views with Level Up notes and advanced examples
+- Modern, accessible UI with responsive layouts for different screen sizes
 
 ---
 
@@ -34,37 +36,53 @@ CyberLens combines my interests in cyber security, user experience design, acces
 
 ---
 
-## Screenshots
-
-### Homepage
-![Homepage](images/homepage.png)
-
-### Interactive Exhibits
-![Exhibits](images/exhibits.png)
-
-### Learning Experience
-![Learning Experience](images/learning.png)
-
----
-
 ## Tech Stack
 
 - HTML
 - CSS
 - JavaScript
-- React
-- Figma
+
+No framework or package manager is required. The site runs directly in the browser.
 
 ---
 
 ## Installation
 
+Clone the repository and serve the files locally with any simple static file server.
+
 ```bash
-git clone https://github.com/yourusername/cyberlens.git
+git clone https://github.com/veritycooper/cyberlens.git
 cd cyberlens
-npm install
-npm run dev
+python -m http.server 8000
 ```
+
+Open [http://localhost:8000](http://localhost:8000) in your browser.
+
+If you do not use Python, you can use another static server (for example the “Live Server” extension in VS Code) or open `index.html` directly, though a local server is recommended so exhibit links behave consistently.
+
+---
+
+## Deploy on GitHub Pages
+
+1. Push this repository to GitHub on the `main` branch.
+2. Go to **Settings → Pages**.
+3. Set **Source** to **Deploy from branch**, branch `main`, folder **/ (root)**.
+4. After the site builds, it will be available at:
+
+   `https://veritycooper.github.io/cyberlens/`
+
+---
+
+## Project structure
+
+| File | Purpose |
+|------|---------|
+| `index.html` | Main museum lobby and inline exhibits |
+| `exhibit.html?topic=...` | Deeper dives (`passwords`, `hashing`, `encryption`, `phishing`, `wifi`, `footprint`, `scenarios`) |
+| `base.css` | Shared layout and typography |
+| `cyberlens.css` | CyberLens styling |
+| `cyberlens.js` | Main page interactions |
+| `cyberlens-exhibit.js` | Dynamic exhibit detail pages |
 
 ---
 

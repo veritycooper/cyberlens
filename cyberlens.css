@@ -544,9 +544,8 @@
 
 .detail-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
-  gap: 1.8rem;
-  align-items: start;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
 }
 
 .detail-experiment {
@@ -555,16 +554,15 @@
 
 .detail-sidebar {
   display: grid;
-  gap: 1rem;
-  align-content: start;
+  gap: 1.25rem;
 }
 
 .detail-sidebar .source-card {
-  padding: 1.25rem 1.35rem;
+  padding: 1.35rem 1.5rem;
 }
 
 .detail-sidebar .source-card h3 {
-  margin: 0 0 0.85rem;
+  margin: 0 0 1rem;
   font-size: 1.05rem;
 }
 
@@ -574,15 +572,15 @@
 }
 
 .detail-sidebar .watch-list {
-  padding-left: 1.15rem;
+  padding-left: 1.2rem;
   display: grid;
-  gap: 0.55rem;
+  gap: 0.65rem;
   color: var(--lens-muted);
 }
 
 .detail-sidebar .watch-list li {
-  line-height: 1.55;
-  padding-left: 0.15rem;
+  line-height: 1.6;
+  padding-left: 0.2rem;
 }
 
 .detail-sidebar .watch-list li::marker {

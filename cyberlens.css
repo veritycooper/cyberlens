@@ -543,17 +543,50 @@
 }
 
 .detail-layout {
+  display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
   gap: 1.8rem;
+  align-items: start;
 }
 
 .detail-experiment {
-  min-height: 360px;
+  min-height: 0;
 }
 
 .detail-sidebar {
   display: grid;
-  gap: 1.2rem;
+  gap: 1rem;
+  align-content: start;
+}
+
+.detail-sidebar .source-card {
+  padding: 1.25rem 1.35rem;
+}
+
+.detail-sidebar .source-card h3 {
+  margin: 0 0 0.85rem;
+  font-size: 1.05rem;
+}
+
+.detail-sidebar .source-card p,
+.detail-sidebar .source-card ul {
+  margin: 0;
+}
+
+.detail-sidebar .watch-list {
+  padding-left: 1.15rem;
+  display: grid;
+  gap: 0.55rem;
+  color: var(--lens-muted);
+}
+
+.detail-sidebar .watch-list li {
+  line-height: 1.55;
+  padding-left: 0.15rem;
+}
+
+.detail-sidebar .watch-list li::marker {
+  color: var(--lens-accent);
 }
 
 .level-up-section {

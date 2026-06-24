@@ -222,11 +222,11 @@
         "The observer does not disappear, but protected traffic becomes much less useful to them.",
       watch: [
         "Open networks can allow nearby observation.",
-        "HTTPS protects content moving between you and a website.",
-        "A VPN can add another protected tunnel on untrusted networks.",
+        "HTTPS (Hypertext Transfer Protocol Secure) protects content moving between you and a website.",
+        "A VPN (Virtual Private Network) can add another protected tunnel on untrusted networks.",
       ],
       everyday:
-        "On public WiFi, prefer HTTPS websites and avoid sending sensitive data through unknown captive portals.",
+        "On public WiFi, prefer HTTPS (secure website) connections and avoid sending sensitive data through unknown captive portals.",
       plain:
         "Public WiFi is shared space. Protection does not stop data moving through the network, but it can stop nearby observers from reading useful details.",
       interaction:
@@ -249,16 +249,16 @@
         {
           label: "Level 2",
           title: "HTTPS",
-          summary: "Encrypted sites hide the useful content of traffic.",
+          summary: "Hypertext Transfer Protocol Secure � encrypted sites hide traffic content.",
           detail:
-            "HTTPS protects the contents of the connection between your browser and the website. Observers may still see that traffic exists, but they should not be able to read passwords or page contents.",
+            "HTTPS stands for Hypertext Transfer Protocol Secure. It protects the contents of the connection between your browser and the website. Observers may still see that traffic exists, but they should not be able to read passwords or page contents.",
         },
         {
           label: "Level 3",
           title: "VPNs",
-          summary: "A VPN can add a protected tunnel on networks you do not trust.",
+          summary: "Virtual Private Networks � an extra protected tunnel on untrusted WiFi.",
           detail:
-            "A VPN encrypts traffic between your device and the VPN provider. It can help on untrusted networks, but it does not make unsafe websites safe or remove the need for good account security.",
+            "VPN stands for Virtual Private Network. A VPN encrypts traffic between your device and the VPN provider. It can help on untrusted networks, but it does not make unsafe websites safe or remove the need for good account security.",
         },
       ],
       advanced: renderWifiAdvanced,
@@ -592,7 +592,7 @@
           <div>
             <span>Best habit</span>
             <strong id="wifi-habit">Check the connection</strong>
-            <p>Use HTTPS, avoid suspicious captive portals, and save sensitive tasks for trusted networks where possible.</p>
+            <p>Use HTTPS (secure website connections), avoid suspicious captive portals, and save sensitive tasks for trusted networks where possible.</p>
           </div>
         </div>
       </div>
